@@ -62,8 +62,7 @@ class Handler(BaseHTTPRequestHandler):
         self._request("POST")
 
     def log_message(self, fmt, *args):
-        sys.stderr.write("[flare-adapter] " + fmt % args + "
-")
+        sys.stderr.write("[flare-adapter] " + fmt % args + "\n")
 
 
 def main():
